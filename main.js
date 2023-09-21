@@ -25,3 +25,7 @@ loading.style.display = "none";
 function getNew() {
   getquote(api_url);
 }
+
+function tweet(){
+  window.open("https://twitter.com/intent/tweet?text=" + quoteArea.innerHTML + "  -- by " + authorName.innerHTML  , "Tweet Window", "width=600", "height=800");
+}
